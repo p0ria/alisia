@@ -6,7 +6,6 @@ import TopNavItem from './TopNavItem/TopNavItem';
 
 export default function TopNav({ ...props }) {
     const match = useRouteMatch();
-    console.log(match);
     return (
         <div className="TopNav">
             {

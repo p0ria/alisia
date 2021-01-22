@@ -20,3 +20,7 @@ export const topNavItems = [
         url: '/offers'
     },
 ]
+
+export const sliderImages = [
+    '1.jpg', '2.jpeg', '3.jpeg', '4.jpeg'
+]

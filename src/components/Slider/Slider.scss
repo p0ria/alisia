@@ -1,0 +1,43 @@
+$animation-duration: 300ms;
+
+.Slider {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        font-size: 3rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+        user-select: none;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
+        z-index: 1;
+        display: flex;
+
+        &--right {
+            right: 0;
+        }
+
+        &[disabled] {
+            transition: color $animation-duration ease;
+            color: rgba(0, 0, 0, 0.3);
+            cursor: default;
+            pointer-events: none;
+        }
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        transition: transform $animation-duration ease;
+
+        img {
+            flex: 0 0 100%;
+        }
+    }
+}
