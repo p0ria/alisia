@@ -1,0 +1,28 @@
+.TopNavItem {
+    text-transform: uppercase;
+    margin: 0 15px;
+    font-size: 0.9rem;
+
+    a {
+        text-decoration: none;
+        color: #222;
+    }
+
+    &.active {
+        a {
+            color: goldenrod;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: -10px;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: darken(goldenrod, 10);
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
