@@ -24,3 +24,7 @@ export const topNavItems = [
 export const sliderImages = [
     '1.jpg', '2.jpeg', '3.jpeg', '4.jpeg'
 ]
+
+export const brandImages = [
+    "adidas.png", "geox.png", "mango.png", "reebok.png", "superdry.png"
+]

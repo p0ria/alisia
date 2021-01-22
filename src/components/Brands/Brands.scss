@@ -1,0 +1,12 @@
+.Brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.03);
+
+    img {
+        height: 50px;
+        margin: 0 30px;
+    }
+}
